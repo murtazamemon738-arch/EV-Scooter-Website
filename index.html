@@ -1,0 +1,787 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="EVO Electric Mobility — premium smart electric scooters with up to 180 km range, connected technology and zero emissions. Move into the future." />
+  <title>EVO — Move Into The Future | Smart Electric Scooters</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <header class="nav" id="nav">
+    <div class="container nav__inner">
+      <a href="#home" class="logo" aria-label="EVO home">
+        <span class="logo__mark" aria-hidden="true">
+          <svg viewBox="0 0 32 32" width="28" height="28" fill="none">
+            <path d="M18.5 3 7 18h7.2L11.5 29 25 13.5H17.4L18.5 3Z" fill="currentColor"/>
+          </svg>
+        </span>
+        <span class="logo__text">EVO</span>
+      </a>
+
+      <nav class="nav__menu" id="navMenu" aria-label="Primary navigation">
+        <a href="#home" class="nav__link is-active">Home</a>
+        <a href="#scooters" class="nav__link">Scooters</a>
+        <a href="#features" class="nav__link">Features</a>
+        <a href="#technology" class="nav__link">Technology</a>
+        <a href="#about" class="nav__link">About</a>
+        <a href="#gallery" class="nav__link">Gallery</a>
+        <a href="#contact" class="nav__link">Contact</a>
+      </nav>
+
+      <div class="nav__actions">
+        <button class="btn btn--primary nav__cta" data-open-modal type="button">Book a Test Ride</button>
+        <button class="nav__toggle" id="navToggle" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="navMenu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="container hero__grid">
+        <div class="hero__content">
+          <span class="eyebrow reveal" style="--delay:.05s">Smart Electric Mobility</span>
+          <h1 class="hero__title reveal" style="--delay:.15s">Move Into<br />The <span class="accent">Future</span></h1>
+          <p class="hero__text reveal" style="--delay:.25s">
+            Experience effortless urban mobility with intelligent technology,
+            impressive range and a cleaner way to move.
+          </p>
+          <div class="hero__actions reveal" style="--delay:.35s">
+            <a href="#scooters" class="btn btn--primary btn--lg">Explore Scooters</a>
+            <button class="btn btn--ghost btn--lg" type="button" data-open-modal>Book a Test Ride</button>
+          </div>
+          <ul class="hero__trust reveal" style="--delay:.45s">
+            <li>2-year warranty</li>
+            <li>Free home delivery</li>
+            <li>Service network in 40+ cities</li>
+          </ul>
+        </div>
+
+        <div class="hero__visual">
+          <div class="hero__image-wrap reveal-img">
+            <img
+              src="assets/images/scooters/hero-scooter.jpg"
+              alt="White EVO electric scooter parked on a quiet nature path with tall grass"
+              width="1600" height="1280" fetchpriority="high" />
+          </div>
+
+          <div class="spec-chip spec-chip--1 float" style="--delay:.5s">
+            <strong>120 km</strong><span>Range</span>
+          </div>
+          <div class="spec-chip spec-chip--2 float" style="--delay:.65s">
+            <strong>70 km/h</strong><span>Top Speed</span>
+          </div>
+          <div class="spec-chip spec-chip--3 float" style="--delay:.8s">
+            <strong>4–5 hrs</strong><span>Charging</span>
+          </div>
+          <div class="spec-chip spec-chip--4 float" style="--delay:.95s">
+            <strong>0%</strong><span>Emissions</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="stats" aria-label="Key performance figures">
+      <div class="container stats__grid">
+        <div class="stat reveal">
+          <span class="stat__icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M3 17h2M7 17V9l5-4 4 5 3 1v6"/><circle cx="7" cy="17" r="2"/><circle cx="17" cy="17" r="2"/></svg>
+          </span>
+          <p class="stat__value"><span class="count" data-count="120">0</span> km</p>
+          <p class="stat__label">Maximum Range</p>
+        </div>
+        <div class="stat reveal" style="--delay:.1s">
+          <span class="stat__icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M12 20a8 8 0 1 1 8-8"/><path d="m12 12 4.5-3.5"/><circle cx="12" cy="12" r="1.4" fill="currentColor" stroke="none"/></svg>
+          </span>
+          <p class="stat__value"><span class="count" data-count="70">0</span> km/h</p>
+          <p class="stat__label">Top Speed</p>
+        </div>
+        <div class="stat reveal" style="--delay:.2s">
+          <span class="stat__icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="7" y="3" width="10" height="18" rx="2"/><path d="M11 7h2"/><path d="m13 11-2 3h2l-2 3"/></svg>
+          </span>
+          <p class="stat__value"><span class="count" data-count="4">0</span>–5 hrs</p>
+          <p class="stat__label">Charging Time</p>
+        </div>
+        <div class="stat reveal" style="--delay:.3s">
+          <span class="stat__icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21s7-4.6 7-10a7 7 0 1 0-14 0c0 5.4 7 10 7 10Z"/><path d="M9.5 11.5 11 13l3.5-3.5"/></svg>
+          </span>
+          <p class="stat__value"><span class="count" data-count="0">0</span>%</p>
+          <p class="stat__label">Tailpipe Emissions</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section models" id="scooters">
+      <div class="container">
+        <div class="section__head reveal">
+          <span class="eyebrow">Our Scooters</span>
+          <h2 class="section__title">Choose the ride that<br />fits your lifestyle.</h2>
+        </div>
+
+        <div class="models__grid">
+          <article class="model-card reveal">
+            <div class="model-card__media">
+              <img src="assets/images/scooters/evo-lite.jpg" alt="EVO Lite electric scooter parked beside a tree on a sunlit park path" loading="lazy" width="853" height="1280" />
+              <span class="model-card__badge">City Commuter</span>
+            </div>
+            <div class="model-card__body">
+              <h3 class="model-card__name">EVO Lite</h3>
+              <p class="model-card__desc">Light, agile and easy to park — built for everyday city commuting.</p>
+              <ul class="model-card__specs">
+                <li><strong>120 km</strong><span>Range</span></li>
+                <li><strong>60 km/h</strong><span>Top Speed</span></li>
+              </ul>
+              <div class="model-card__foot">
+                <p class="model-card__price">From <strong>$1,999</strong></p>
+                <a href="#contact" class="model-card__link">Explore Model <span aria-hidden="true">→</span></a>
+              </div>
+            </div>
+          </article>
+
+          <article class="model-card reveal" style="--delay:.12s">
+            <div class="model-card__media">
+              <img src="assets/images/scooters/evo-pro.jpg" alt="EVO Pro electric scooter in teal and white standing among autumn leaves" loading="lazy" width="1400" height="933" />
+              <span class="model-card__badge">Long Range</span>
+            </div>
+            <div class="model-card__body">
+              <h3 class="model-card__name">EVO Pro</h3>
+              <p class="model-card__desc">Extended range and connected features for riders who go farther.</p>
+              <ul class="model-card__specs">
+                <li><strong>150 km</strong><span>Range</span></li>
+                <li><strong>70 km/h</strong><span>Top Speed</span></li>
+              </ul>
+              <div class="model-card__foot">
+                <p class="model-card__price">From <strong>$2,499</strong></p>
+                <a href="#contact" class="model-card__link">Explore Model <span aria-hidden="true">→</span></a>
+              </div>
+            </div>
+          </article>
+
+          <article class="model-card reveal" style="--delay:.24s">
+            <div class="model-card__media">
+              <img src="assets/images/scooters/evo-max.jpg" alt="EVO Max electric scooter in black parked on a paved city street" loading="lazy" width="1280" height="853" />
+              <span class="model-card__badge">High Performance</span>
+            </div>
+            <div class="model-card__body">
+              <h3 class="model-card__name">EVO Max</h3>
+              <p class="model-card__desc">The flagship. Maximum range, quickest acceleration, premium finishes.</p>
+              <ul class="model-card__specs">
+                <li><strong>180 km</strong><span>Range</span></li>
+                <li><strong>85 km/h</strong><span>Top Speed</span></li>
+              </ul>
+              <div class="model-card__foot">
+                <p class="model-card__price">From <strong>$3,199</strong></p>
+                <a href="#contact" class="model-card__link">Explore Model <span aria-hidden="true">→</span></a>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section why" id="about">
+      <div class="container why__grid">
+        <div class="why__media reveal-img">
+          <img class="why__img" src="assets/images/lifestyle/why-choose.jpg" alt="Woman riding an EVO electric scooter across a city crosswalk near a modern glass building" loading="lazy" width="1400" height="933" />
+          <img class="why__img-float" src="assets/images/features/scooter-green.jpg" alt="Green EVO electric scooter standing on a quiet tree-lined road" loading="lazy" width="853" height="1280" />
+        </div>
+
+        <div class="why__content">
+          <span class="eyebrow reveal">Why Choose EVO</span>
+          <h2 class="section__title reveal" style="--delay:.08s">Designed Around Your Everyday</h2>
+          <p class="section__lead reveal" style="--delay:.14s">
+            From your morning commute to weekend exploration, every detail is designed
+            to make electric mobility simple, comfortable and enjoyable.
+          </p>
+
+          <ul class="feature-list">
+            <li class="feature-list__item reveal" style="--delay:.18s">
+              <span class="feature-list__num">01</span>
+              <span class="feature-list__icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M13 2 4.5 13.5H11L10 22l9-11.5h-6.2L13 2Z"/></svg>
+              </span>
+              <div>
+                <h3>Long Range</h3>
+                <p>Go farther between charges with up to 180 km on a single charge.</p>
+              </div>
+            </li>
+            <li class="feature-list__item reveal" style="--delay:.26s">
+              <span class="feature-list__num">02</span>
+              <span class="feature-list__icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="7" y="2.5" width="10" height="19" rx="2.5"/><path d="M11 18.5h2"/></svg>
+              </span>
+              <div>
+                <h3>Smart Connectivity</h3>
+                <p>Stay connected to your scooter through your mobile device.</p>
+              </div>
+            </li>
+            <li class="feature-list__item reveal" style="--delay:.34s">
+              <span class="feature-list__num">03</span>
+              <span class="feature-list__icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M4 15v-2a5 5 0 0 1 5-5h6a5 5 0 0 1 5 5v2"/><path d="M2 15h20v3H2z"/><path d="M6 18v2M18 18v2"/></svg>
+              </span>
+              <div>
+                <h3>Comfortable Ride</h3>
+                <p>Ergonomic geometry and smooth suspension for urban journeys.</p>
+              </div>
+            </li>
+            <li class="feature-list__item reveal" style="--delay:.42s">
+              <span class="feature-list__num">04</span>
+              <span class="feature-list__icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M14.7 6.3a4.5 4.5 0 0 0-6 6L4 17v3h3l4.7-4.7a4.5 4.5 0 0 0 6-6L15 12l-3-3 2.7-2.7Z"/></svg>
+              </span>
+              <div>
+                <h3>Low Maintenance</h3>
+                <p>Simple electric powertrain with fewer moving parts to service.</p>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="section tech" id="technology">
+      <div class="container">
+        <div class="section__head section__head--center reveal">
+          <span class="eyebrow">Technology</span>
+          <h2 class="section__title">Smart Technology For<br />A Smarter Ride</h2>
+        </div>
+
+        <div class="tech__grid">
+          <div class="tech__media reveal-img">
+            <img src="assets/images/technology/smart-display.jpg" alt="Illuminated digital scooter dashboard showing speed and battery information at night" loading="lazy" width="1400" height="933" />
+            <div class="tech__media-chip">
+              <img src="assets/images/technology/ride-display.jpg" alt="Close-up of an EVO TFT ride display showing speed readout" loading="lazy" width="1200" height="774" />
+            </div>
+          </div>
+
+          <ul class="tech__list">
+            <li class="tech__item reveal">
+              <span class="tech__icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="2.5" y="5" width="19" height="12" rx="2"/><path d="M8 21h8M12 17v4"/></svg>
+              </span>
+              <div><h3>Smart Display</h3><p>See speed, battery level, range and riding information at a glance.</p></div>
+            </li>
+            <li class="tech__item reveal" style="--delay:.08s">
+              <span class="tech__icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21s7-5.4 7-11a7 7 0 1 0-14 0c0 5.6 7 11 7 11Z"/><circle cx="12" cy="10" r="2.5"/></svg>
+              </span>
+              <div><h3>GPS Tracking</h3><p>Locate your scooter in real time, anywhere in the city.</p></div>
+            </li>
+            <li class="tech__item reveal" style="--delay:.16s">
+              <span class="tech__icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="7" y="2.5" width="10" height="19" rx="2.5"/><path d="M11 18.5h2"/></svg>
+              </span>
+              <div><h3>Mobile App</h3><p>Control, customise and monitor your scooter from your phone.</p></div>
+            </li>
+            <li class="tech__item reveal" style="--delay:.24s">
+              <span class="tech__icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="2.5" y="7" width="16" height="10" rx="2"/><path d="M21 10.5v3"/><path d="M5.5 10.5v3M9 10.5v3"/></svg>
+              </span>
+              <div><h3>Battery Monitoring</h3><p>Live cell health, temperature and precise remaining range.</p></div>
+            </li>
+            <li class="tech__item reveal" style="--delay:.32s">
+              <span class="tech__icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19V5"/><path d="M4 19h16"/><path d="m7 15 3.5-4 3 2.5L19 7"/></svg>
+              </span>
+              <div><h3>Ride Statistics</h3><p>Trips, distance, efficiency and riding trends over time.</p></div>
+            </li>
+            <li class="tech__item reveal" style="--delay:.4s">
+              <span class="tech__icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3 5 6v5.5c0 4.3 3 8.2 7 9.5 4-1.3 7-5.2 7-9.5V6l-7-3Z"/><path d="m9.5 12 1.8 1.8 3.4-3.6"/></svg>
+              </span>
+              <div><h3>Anti-Theft Protection</h3><p>Motion alerts and remote immobilisation if anyone touches it.</p></div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="section performance" id="performance">
+      <div class="container performance__grid">
+        <div class="performance__media reveal-img">
+          <img src="assets/images/backgrounds/performance-city.jpg" alt="Rider on an EVO electric scooter on a modern city road surrounded by glass skyscrapers" loading="lazy" width="1600" height="2134" />
+          <div class="performance__badge">
+            <strong>4.5 kW</strong><span>Peak Motor Power</span>
+          </div>
+        </div>
+
+        <div class="performance__content">
+          <span class="eyebrow reveal">Performance</span>
+          <h2 class="section__title reveal" style="--delay:.08s">Performance Without Compromise</h2>
+          <p class="section__lead reveal" style="--delay:.14s">
+            A powerful electric motor, smooth acceleration and a long-range battery
+            deliver responsive handling in complete silence — every single ride.
+          </p>
+
+          <ul class="metrics">
+            <li class="metric reveal" style="--delay:.18s">
+              <div class="metric__top"><span>Acceleration</span><strong>Smooth &amp; instant</strong></div>
+              <div class="metric__bar"><span class="metric__fill" style="--target:92%"></span></div>
+            </li>
+            <li class="metric reveal" style="--delay:.26s">
+              <div class="metric__top"><span>Range Efficiency</span><strong>Up to 180 km</strong></div>
+              <div class="metric__bar"><span class="metric__fill" style="--target:86%"></span></div>
+            </li>
+            <li class="metric reveal" style="--delay:.34s">
+              <div class="metric__top"><span>Responsive Handling</span><strong>Chassis tuned for cities</strong></div>
+              <div class="metric__bar"><span class="metric__fill" style="--target:78%"></span></div>
+            </li>
+            <li class="metric reveal" style="--delay:.42s">
+              <div class="metric__top"><span>Quiet Operation</span><strong>Near-silent drive</strong></div>
+              <div class="metric__bar"><span class="metric__fill" style="--target:96%"></span></div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="section battery" id="battery">
+      <div class="container battery__grid">
+        <div class="battery__content">
+          <span class="eyebrow reveal">Battery &amp; Charging</span>
+          <h2 class="section__title reveal" style="--delay:.08s">Charge Less.<br />Ride More.</h2>
+          <p class="section__lead reveal" style="--delay:.14s">
+            Our advanced battery technology is designed to deliver dependable range
+            while keeping charging simple and convenient.
+          </p>
+
+          <div class="charging reveal" style="--delay:.2s" id="charging">
+            <div class="charging__track">
+              <span class="charging__fill"></span>
+            </div>
+            <ul class="charging__steps">
+              <li data-step="0"><strong>0%</strong><span>Plug in</span></li>
+              <li data-step="25"><strong>25%</strong><span>1 hr</span></li>
+              <li data-step="50"><strong>50%</strong><span>2 hrs</span></li>
+              <li data-step="75"><strong>75%</strong><span>3 hrs</span></li>
+              <li data-step="100"><strong>100%</strong><span>4–5 hrs</span></li>
+            </ul>
+          </div>
+
+          <ul class="battery__specs">
+            <li class="reveal" style="--delay:.26s"><strong>120 km</strong><span>Real-world range</span></li>
+            <li class="reveal" style="--delay:.32s"><strong>4–5 hrs</strong><span>Full charge</span></li>
+            <li class="reveal" style="--delay:.38s"><strong>Smart</strong><span>Battery monitoring</span></li>
+            <li class="reveal" style="--delay:.44s"><strong>8 yrs</strong><span>Battery life</span></li>
+          </ul>
+        </div>
+
+        <div class="battery__media reveal-img">
+          <img src="assets/images/features/charging.jpg" alt="Charging cable connected to an electric vehicle charging port" loading="lazy" width="1280" height="853" />
+        </div>
+      </div>
+    </section>
+
+    <section class="lifestyle" id="lifestyle">
+      <div class="lifestyle__media">
+        <img src="assets/images/lifestyle/lifestyle-ride.jpg" alt="Classic cream electric scooter parked by a railing overlooking the sea at sunset" loading="lazy" width="1600" height="1066" />
+      </div>
+      <div class="container lifestyle__inner">
+        <div class="lifestyle__content reveal">
+          <span class="eyebrow eyebrow--light">Lifestyle</span>
+          <h2 class="lifestyle__title">Your City.<br />Your Freedom.</h2>
+          <p>Skip traffic, enjoy quieter journeys and experience a smarter way to move around the city.</p>
+          <a href="#gallery" class="btn btn--light">Explore the Experience <span aria-hidden="true">→</span></a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section safety" id="features">
+      <div class="container safety__grid">
+        <div class="safety__content">
+          <span class="eyebrow reveal">Safety</span>
+          <h2 class="section__title reveal" style="--delay:.08s">Built With Your Safety In Mind</h2>
+          <p class="section__lead reveal" style="--delay:.14s">
+            Every EVO scooter combines mechanical confidence with smart protection,
+            so you stay in control day and night.
+          </p>
+
+          <ul class="safety__list">
+            <li class="reveal">
+              <span class="safety__icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="8"/><circle cx="12" cy="12" r="3"/><path d="M12 4v3M12 17v3M4 12h3M17 12h3"/></svg></span>
+              <div><h3>Anti-Lock Braking</h3><p>Combined braking keeps wheels from locking on wet or loose surfaces.</p></div>
+            </li>
+            <li class="reveal" style="--delay:.06s">
+              <span class="safety__icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M9 18h6"/><path d="M10 21h4"/><path d="M12 3a6 6 0 0 0-3.5 10.9c.6.5.9 1.2.9 1.9V16h5.2v-.2c0-.7.3-1.4.9-1.9A6 6 0 0 0 12 3Z"/></svg></span>
+              <div><h3>LED Lighting</h3><p>Full LED headlight and brake light for clear visibility after dark.</p></div>
+            </li>
+            <li class="reveal" style="--delay:.12s">
+              <span class="safety__icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9a6 6 0 1 1 12 0c0 4-2 5.5-2 7H8c0-1.5-2-3-2-7Z"/><path d="M10 19.5a2.2 2.2 0 0 0 4 0"/></svg></span>
+              <div><h3>Anti-Theft Alarm</h3><p>Motion-sensor alarm that notifies you instantly on your phone.</p></div>
+            </li>
+            <li class="reveal" style="--delay:.18s">
+              <span class="safety__icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="5" y="10.5" width="14" height="9.5" rx="2"/><path d="M8 10.5V8a4 4 0 0 1 8 0v2.5"/></svg></span>
+              <div><h3>Smart Lock</h3><p>Secure your scooter directly from the connected mobile app.</p></div>
+            </li>
+            <li class="reveal" style="--delay:.24s">
+              <span class="safety__icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="8.5"/><circle cx="12" cy="12" r="3.5"/><path d="M12 3.5v3M12 17.5v3"/></svg></span>
+              <div><h3>Tire Monitoring</h3><p>Live tire pressure alerts help you ride safer and extend tire life.</p></div>
+            </li>
+            <li class="reveal" style="--delay:.3s">
+              <span class="safety__icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3.5 14.6 9l6 .9-4.3 4.2 1 6-5.3-2.8L6.7 20l1-6L3.4 9.9l6-.9L12 3.5Z"/></svg></span>
+              <div><h3>High-Visibility Design</h3><p>Reflective side panels and bright accents keep you seen in traffic.</p></div>
+            </li>
+          </ul>
+        </div>
+
+        <div class="safety__media reveal-img">
+          <img src="assets/images/features/safety.jpg" alt="Black EVO electric scooter secured in a dimly lit underground parking area" loading="lazy" width="1400" height="1867" />
+        </div>
+      </div>
+    </section>
+
+    <section class="section gallery" id="gallery">
+      <div class="container">
+        <div class="section__head section__head--center reveal">
+          <span class="eyebrow">Gallery</span>
+          <h2 class="section__title">See EVO In The Wild</h2>
+        </div>
+
+        <div class="gallery__grid">
+          <button class="gallery__item gallery__item--tall reveal" type="button" data-gallery-index>
+            <img src="assets/images/scooters/evo-max.jpg" alt="EVO Max electric scooter in black parked on a paved city street" loading="lazy" width="1280" height="853" />
+            <span class="gallery__caption">EVO Max — side profile</span>
+          </button>
+          <button class="gallery__item reveal" style="--delay:.06s" type="button" data-gallery-index>
+            <img src="assets/images/lifestyle/rider-crossing.jpg" alt="Rider crossing a city street on an EVO electric scooter with motion blur" loading="lazy" width="1400" height="934" />
+            <span class="gallery__caption">Morning commute</span>
+          </button>
+          <button class="gallery__item reveal" style="--delay:.12s" type="button" data-gallery-index>
+            <img src="assets/images/features/scooter-detail.jpg" alt="Close-up of the front headlight and handlebar of a white EVO scooter" loading="lazy" width="1200" height="1807" />
+            <span class="gallery__caption">Front detail</span>
+          </button>
+          <button class="gallery__item gallery__item--wide reveal" style="--delay:.06s" type="button" data-gallery-index>
+            <img src="assets/images/technology/ride-display.jpg" alt="TFT ride display of an EVO scooter showing speed and ride data" loading="lazy" width="1200" height="774" />
+            <span class="gallery__caption">Smart display</span>
+          </button>
+          <button class="gallery__item reveal" style="--delay:.12s" type="button" data-gallery-index>
+            <img src="assets/images/lifestyle/rider-mural.jpg" alt="Rider on an EVO scooter passing a colourful mural in the city" loading="lazy" width="1200" height="800" />
+            <span class="gallery__caption">City exploration</span>
+          </button>
+          <button class="gallery__item reveal" style="--delay:.18s" type="button" data-gallery-index>
+            <img src="assets/images/features/charging.jpg" alt="Charging cable plugged into an electric vehicle charging port" loading="lazy" width="1280" height="853" />
+            <span class="gallery__caption">Charging</span>
+          </button>
+          <button class="gallery__item gallery__item--tall reveal" type="button" data-gallery-index>
+            <img src="assets/images/scooters/evo-lite.jpg" alt="EVO Lite electric scooter beside a tree on a sunlit park path" loading="lazy" width="853" height="1280" />
+            <span class="gallery__caption">EVO Lite — nature ride</span>
+          </button>
+          <button class="gallery__item reveal" style="--delay:.06s" type="button" data-gallery-index>
+            <img src="assets/images/lifestyle/speed-motion.jpg" alt="Pink electric scooter speeding through the city at dusk" loading="lazy" width="1400" height="2100" />
+            <span class="gallery__caption">After-hours speed</span>
+          </button>
+          <button class="gallery__item gallery__item--wide reveal" style="--delay:.12s" type="button" data-gallery-index>
+            <img src="assets/images/lifestyle/rider-city.jpg" alt="Rider standing with an EVO electric scooter on a wide city avenue" loading="lazy" width="1400" height="2488" />
+            <span class="gallery__caption">Urban rider</span>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <section class="section app" id="app">
+      <div class="app__bg" aria-hidden="true">
+        <img src="assets/images/technology/phone-hand.jpg" alt="" loading="lazy" width="1400" height="2489" />
+      </div>
+      <div class="container app__grid">
+        <div class="app__content">
+          <span class="eyebrow reveal">Mobile App</span>
+          <h2 class="section__title reveal" style="--delay:.08s">Your Scooter.<br />Connected.</h2>
+          <p class="section__lead reveal" style="--delay:.14s">
+            Keep track of your scooter, battery, range and riding information
+            directly from your phone.
+          </p>
+
+          <ul class="app__features">
+            <li class="reveal" style="--delay:.18s"><span aria-hidden="true">◎</span> Live Location</li>
+            <li class="reveal" style="--delay:.24s"><span aria-hidden="true">◉</span> Battery Status</li>
+            <li class="reveal" style="--delay:.3s"><span aria-hidden="true">▤</span> Trip History</li>
+            <li class="reveal" style="--delay:.36s"><span aria-hidden="true">🔒</span> Remote Lock</li>
+            <li class="reveal" style="--delay:.42s"><span aria-hidden="true">⚠</span> Service Alerts</li>
+          </ul>
+        </div>
+
+        <div class="app__phone reveal" style="--delay:.15s" aria-hidden="true">
+          <div class="phone">
+            <div class="phone__notch"></div>
+            <div class="phone__screen">
+              <div class="phone__status"><span>9:41</span><span>EVO App</span></div>
+              <div class="phone__map">
+                <span class="phone__pin"></span>
+                <span class="phone__route"></span>
+              </div>
+              <div class="phone__ring">
+                <div class="phone__ring-value"><strong>78%</strong><span>Battery</span></div>
+              </div>
+              <div class="phone__stats">
+                <div><strong>120 km</strong><span>Range</span></div>
+                <div><strong>34 km</strong><span>Today</span></div>
+                <div><strong>Locked</strong><span>Status</span></div>
+              </div>
+              <button class="phone__cta" type="button" tabindex="-1">Start Ride</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section reviews" id="reviews">
+      <div class="container">
+        <div class="section__head section__head--center reveal">
+          <span class="eyebrow">Reviews</span>
+          <h2 class="section__title">Loved By City Riders</h2>
+        </div>
+
+        <div class="slider reveal" id="reviewSlider">
+          <div class="slider__viewport">
+            <ul class="slider__track">
+              <li class="slide is-active">
+                <figure class="review-card">
+                  <div class="review-card__stars" aria-label="Rated 5 out of 5">★★★★★</div>
+                  <blockquote>“Smooth, quiet and incredibly easy to use. My daily commute feels completely different now.”</blockquote>
+                  <figcaption>
+                    <img src="assets/images/lifestyle/avatar-1.jpg" alt="Portrait of Sarah Mitchell" loading="lazy" width="300" height="450" />
+                    <div><strong>Sarah Mitchell</strong><span>EVO Pro owner · London</span></div>
+                  </figcaption>
+                </figure>
+              </li>
+              <li class="slide">
+                <figure class="review-card">
+                  <div class="review-card__stars" aria-label="Rated 5 out of 5">★★★★★</div>
+                  <blockquote>“The range is exactly as promised. I charge twice a week and the app keeps everything in check.”</blockquote>
+                  <figcaption>
+                    <img src="assets/images/lifestyle/avatar-2.jpg" alt="Portrait of Daniel Okafor" loading="lazy" width="300" height="453" />
+                    <div><strong>Daniel Okafor</strong><span>EVO Max owner · Berlin</span></div>
+                  </figcaption>
+                </figure>
+              </li>
+              <li class="slide">
+                <figure class="review-card">
+                  <div class="review-card__stars" aria-label="Rated 5 out of 5">★★★★★</div>
+                  <blockquote>“Design, build quality and the smart display feel genuinely premium. Best purchase this year.”</blockquote>
+                  <figcaption>
+                    <img src="assets/images/lifestyle/avatar-3.jpg" alt="Portrait of Priya Raman" loading="lazy" width="300" height="200" />
+                    <div><strong>Priya Raman</strong><span>EVO Lite owner · Austin</span></div>
+                  </figcaption>
+                </figure>
+              </li>
+            </ul>
+          </div>
+
+          <div class="slider__controls">
+            <button class="slider__btn" type="button" data-slider="prev" aria-label="Previous review">‹</button>
+            <div class="slider__dots" role="tablist" aria-label="Choose review"></div>
+            <button class="slider__btn" type="button" data-slider="next" aria-label="Next review">›</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section faq" id="faq">
+      <div class="container faq__grid">
+        <div class="faq__intro">
+          <span class="eyebrow reveal">FAQ</span>
+          <h2 class="section__title reveal" style="--delay:.08s">Questions,<br />Answered</h2>
+          <p class="section__lead reveal" style="--delay:.14s">Everything you need to know before your first ride.</p>
+        </div>
+
+        <div class="accordion reveal" style="--delay:.1s">
+          <div class="accordion__item">
+            <h3><button class="accordion__btn" type="button" aria-expanded="false">How far can the scooter travel on one charge?<span class="accordion__icon" aria-hidden="true"></span></button></h3>
+            <div class="accordion__panel"><div class="accordion__inner"><p>EVO Lite travels up to 120 km, EVO Pro up to 150 km and EVO Max up to 180 km on a single charge, depending on riding style, load and terrain.</p></div></div>
+          </div>
+          <div class="accordion__item">
+            <h3><button class="accordion__btn" type="button" aria-expanded="false">How long does charging take?<span class="accordion__icon" aria-hidden="true"></span></button></h3>
+            <div class="accordion__panel"><div class="accordion__inner"><p>A full charge takes 4–5 hours from a standard outlet. Fast charging reaches 80% in roughly 2.5 hours.</p></div></div>
+          </div>
+          <div class="accordion__item">
+            <h3><button class="accordion__btn" type="button" aria-expanded="false">Can I track my scooter?<span class="accordion__icon" aria-hidden="true"></span></button></h3>
+            <div class="accordion__panel"><div class="accordion__inner"><p>Yes. Built-in GPS shows your scooter's live location in the EVO app, along with ride history and geofence alerts.</p></div></div>
+          </div>
+          <div class="accordion__item">
+            <h3><button class="accordion__btn" type="button" aria-expanded="false">Does it have an anti-theft system?<span class="accordion__icon" aria-hidden="true"></span></button></h3>
+            <div class="accordion__panel"><div class="accordion__inner"><p>Every EVO includes a motion-sensor alarm, remote immobilisation and a smart lock you can control from your phone.</p></div></div>
+          </div>
+          <div class="accordion__item">
+            <h3><button class="accordion__btn" type="button" aria-expanded="false">Can I book a test ride?<span class="accordion__icon" aria-hidden="true"></span></button></h3>
+            <div class="accordion__panel"><div class="accordion__inner"><p>Absolutely. Use the “Book a Test Ride” button, pick your model and preferred date — our team will confirm within 24 hours.</p></div></div>
+          </div>
+          <div class="accordion__item">
+            <h3><button class="accordion__btn" type="button" aria-expanded="false">How long does the battery last?<span class="accordion__icon" aria-hidden="true"></span></button></h3>
+            <div class="accordion__panel"><div class="accordion__inner"><p>The battery is rated for up to 8 years or 60,000 km, and is covered by a 2-year warranty with optional extended protection.</p></div></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="cta" id="contact">
+      <div class="cta__bg" aria-hidden="true">
+        <img src="assets/images/backgrounds/cta-golden-hour.jpg" alt="" loading="lazy" width="1600" height="2068" />
+      </div>
+      <div class="container cta__inner reveal">
+        <h2 class="cta__title">Ready To Ride Electric?</h2>
+        <p class="cta__text">Experience the future of urban mobility for yourself.</p>
+        <div class="cta__actions">
+          <button class="btn btn--primary btn--lg" type="button" data-open-modal>Book a Test Ride</button>
+          <a href="#scooters" class="btn btn--light btn--lg">Explore Scooters</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer__grid">
+      <div class="footer__brand">
+        <a href="#home" class="logo logo--footer">
+          <span class="logo__mark" aria-hidden="true">
+            <svg viewBox="0 0 32 32" width="26" height="26" fill="none"><path d="M18.5 3 7 18h7.2L11.5 29 25 13.5H17.4L18.5 3Z" fill="currentColor"/></svg>
+          </span>
+          <span class="logo__text">EVO</span>
+        </a>
+        <p>Smart electric mobility for modern cities. Designed for range, safety and everyday joy.</p>
+        <div class="footer__social">
+          <a href="#home" aria-label="EVO on Instagram"><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="3.5" y="3.5" width="17" height="17" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17" cy="7" r="1" fill="currentColor" stroke="none"/></svg></a>
+          <a href="#home" aria-label="EVO on X"><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"><path d="M4 4l16 16M20 4 4 20"/></svg></a>
+          <a href="#home" aria-label="EVO on YouTube"><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"><rect x="3" y="6" width="18" height="12" rx="4"/><path d="m10.5 9.5 4.5 2.5-4.5 2.5v-5Z" fill="currentColor"/></svg></a>
+          <a href="#home" aria-label="EVO on LinkedIn"><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"><rect x="3.5" y="3.5" width="17" height="17" rx="3"/><path d="M8 10.5V17M8 7.6v.1M12 17v-3.6a2.4 2.4 0 0 1 4.8 0V17"/></svg></a>
+        </div>
+      </div>
+
+      <nav class="footer__col" aria-label="Scooters">
+        <h3>Scooters</h3>
+        <a href="#scooters">EVO Lite</a>
+        <a href="#scooters">EVO Pro</a>
+        <a href="#scooters">EVO Max</a>
+        <a href="#contact">Compare Models</a>
+      </nav>
+
+      <nav class="footer__col" aria-label="Technology">
+        <h3>Technology</h3>
+        <a href="#technology">Smart Display</a>
+        <a href="#technology">Mobile App</a>
+        <a href="#battery">Battery &amp; Charging</a>
+        <a href="#features">Safety</a>
+      </nav>
+
+      <nav class="footer__col" aria-label="Company">
+        <h3>Company</h3>
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+        <a href="#gallery">Gallery</a>
+      </nav>
+
+      <nav class="footer__col" aria-label="Support">
+        <h3>Support</h3>
+        <a href="#faq">FAQ</a>
+        <a href="#contact">Test Rides</a>
+        <a href="#contact">Privacy Policy</a>
+        <a href="#contact">Terms</a>
+      </nav>
+    </div>
+
+    <div class="container footer__bottom">
+      <p>© 2026 EVO Electric Mobility. All rights reserved.</p>
+      <p>Designed &amp; built for a cleaner way to move.</p>
+    </div>
+  </footer>
+
+  <button class="to-top" id="toTop" type="button" aria-label="Back to top">
+    <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m6 14 6-6 6 6"/></svg>
+  </button>
+
+  <div class="modal" id="testRideModal" hidden>
+    <div class="modal__backdrop" data-close-modal></div>
+    <div class="modal__dialog" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+      <button class="modal__close" type="button" data-close-modal aria-label="Close dialog">×</button>
+
+      <div class="modal__body" id="modalFormView">
+        <span class="eyebrow">Test Ride</span>
+        <h2 id="modalTitle">Book Your Test Ride</h2>
+        <p class="modal__sub">Tell us what suits you and we'll confirm within 24 hours.</p>
+
+        <form class="form" id="testRideForm" novalidate>
+          <div class="form__row">
+            <div class="field">
+              <label for="trName">Full Name</label>
+              <input type="text" id="trName" name="name" autocomplete="name" placeholder="Jane Doe" required />
+              <small class="field__error" data-error-for="trName"></small>
+            </div>
+            <div class="field">
+              <label for="trEmail">Email</label>
+              <input type="email" id="trEmail" name="email" autocomplete="email" placeholder="jane@email.com" required />
+              <small class="field__error" data-error-for="trEmail"></small>
+            </div>
+          </div>
+
+          <div class="form__row">
+            <div class="field">
+              <label for="trPhone">Phone</label>
+              <input type="tel" id="trPhone" name="phone" autocomplete="tel" placeholder="+1 555 010 2030" required />
+              <small class="field__error" data-error-for="trPhone"></small>
+            </div>
+            <div class="field">
+              <label for="trModel">Preferred Scooter</label>
+              <select id="trModel" name="model" required>
+                <option value="">Select a model</option>
+                <option>EVO Lite</option>
+                <option>EVO Pro</option>
+                <option>EVO Max</option>
+              </select>
+              <small class="field__error" data-error-for="trModel"></small>
+            </div>
+          </div>
+
+          <div class="form__row">
+            <div class="field">
+              <label for="trDate">Preferred Date</label>
+              <input type="date" id="trDate" name="date" required />
+              <small class="field__error" data-error-for="trDate"></small>
+            </div>
+            <div class="field">
+              <label for="trMessage">Message <span class="field__optional">(optional)</span></label>
+              <textarea id="trMessage" name="message" rows="3" placeholder="Anything we should know?"></textarea>
+            </div>
+          </div>
+
+          <div class="form__actions">
+            <button class="btn btn--ghost" type="button" data-close-modal>Cancel</button>
+            <button class="btn btn--primary" type="submit">Book Test Ride</button>
+          </div>
+        </form>
+      </div>
+
+      <div class="modal__success" id="modalSuccessView" hidden>
+        <span class="modal__check" aria-hidden="true">
+          <svg viewBox="0 0 24 24" width="34" height="34" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m5 12.5 4.5 4.5L19 7.5"/></svg>
+        </span>
+        <h2>Test Ride Booked!</h2>
+        <p id="successMessage">Thanks — we've received your request and will confirm your ride shortly.</p>
+        <button class="btn btn--primary" type="button" data-close-modal>Done</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="lightbox" id="lightbox" hidden>
+    <button class="lightbox__close" type="button" aria-label="Close gallery">×</button>
+    <button class="lightbox__nav lightbox__nav--prev" type="button" aria-label="Previous image">‹</button>
+    <figure class="lightbox__figure">
+      <img alt="" id="lightboxImg" />
+      <figcaption id="lightboxCaption"></figcaption>
+    </figure>
+    <button class="lightbox__nav lightbox__nav--next" type="button" aria-label="Next image">›</button>
+    <div class="lightbox__counter" id="lightboxCounter"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
